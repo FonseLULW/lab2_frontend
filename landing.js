@@ -18,7 +18,9 @@ $(document).ready(function() {
                 }).text('Remove');
                 newMessage.append(removeButton);
                 $('#chat-history').append(newMessage);
-            }
+            }, error: function(error) {
+				console.log("ERR:", error);
+			}
 		});
 	});
 });
