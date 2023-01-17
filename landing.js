@@ -9,7 +9,6 @@ $(document).ready(function() {
 				message: message
 			},
 			success: function(response) {
-				console.log("RES:", response);
                 let newMessage = $('<div>', {
                     class: 'message'
                 }).text(response.text);
